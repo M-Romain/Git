@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jeu du président</title>
+
+</head>
+<body onload='javascipt:afficher_deconnexion(); afficher_connex();'>
+	<div id="deconnexion" style="display:none">
+		Bienvenue <span id="nom"></span> !
+		<button id="deco">Déconnexion</button>
+	</div>
+	<div>
+		<h3>Jeu du président</h3>
+	</div>
+	<div class="Connexion" id="connex" style="display:none">
+		<ul>
+			<li><span>Login</span><input type="text" id="login_2" name="login_2" /></li>
+			<li><span>password</span><input type="password" id="mdp_2" name="mdp_2" /></li>
+			<li><button id="connect_2">Connecter un deuxième joueur</button></li>
+			<h4>Si le deuxième joueur ne se connecte pas, les scores ne seront pas sauvegardés et la partie ne pourra être mise en pause</h4>
+			<li><button id="local">Continuer sans connexion</button></li>
+		</ul>
+	</div>
+	<div id="no_connex" style="display:none">
+		<button id="jouer_avec" onClick="javascript:self.location.href = './Partie_locale.html';">Jouer avec <span id="nom_2"></span></button>
+		<button id="deco_2" onClick="javascript:deco_joueur2();">Déconnecter <span id="deco_nom_2"></span></button>
+	</div>
+	<div class="Inscription">
+		<button id="retour_selection">Retour</button>
+	</div>
+	
+	<script src="JS/jquery-1.10.2.js"></script>
+	<script src="JS/partie_locale.js"></script>
+	<script src="JS/joueur.js"></script>
+	<script src="JS/main.js"></script>
+</body>
+</html>

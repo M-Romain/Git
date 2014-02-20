@@ -1,0 +1,38 @@
+@CHARSET "US-ASCII";
+
+
+.cartes li {
+	list-style-type: none;
+	float: left;
+	width: 45px;
+	height: 67px;
+	display: inline-block;
+	background: url("SpriteCartes.png") no-repeat;
+	margin-right: 10px;
+}
+.cartes li.carte1 {background-position: left top}
+.cartes li.carte2 {background-position: -55px top}
+.cartes li.carte3 {background-position: -110px top;}
+.cartes li.carte4 {background-position: -165px top;}
+.cartes li.carte5 {background-position: -220px top;}
+.cartes li.carte6 {background-position: -275px top;}
+.cartes li.carte7 {background-position: -330px top;}
+.cartes li.carte8 {background-position: -385px top;}
+.cartes li.carte9 {background-position: -440px top;}
+.cartes li.carte10 {background-position: -495px top;}
+.cartes li.carte11 {background-position: -550px top;}
+
+
+.nomJoueurs, #plateau2{
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 700px; 
+}
+.cartesHori{
+	height: 100px;
+}
+#plateau2{
+	height: 200px;
+	text-align: center;
+	padding-top: 50px;
+}

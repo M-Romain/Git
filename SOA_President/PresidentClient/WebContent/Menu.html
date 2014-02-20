@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jeu du président</title>
+<link rel="stylesheet" media="screen" type="text/css" title="Exemple" href="Globaldesign.css"/>
+</head>
+<body onload='javascipt:afficher_deconnexion();'>
+	<div id="deconnexion" style="display:none">
+		Bienvenue <span id="nom"></span> !
+		<button id="deco">Déconnexion</button>
+	</div>
+	<div>
+		<h3>Jeu du président</h3>
+	</div>
+	<div class="Jeu">
+		<div id="loginUser"></div>
+		<div class="NewPartie">
+			<button id="newPlay">Nouvelle Partie</button>
+		</div>
+		<div class="PartieAFinir">
+			<p>Partie en pause <span id="showPartieEnPause">+</span></p>
+			<div id="PlayOnPause" style="display:none"></div>
+		</div>
+		<div class="PartieEnAttenteJoueurs">
+			<p>Partie en attente de joueurs  <span id="showPartieEnAttente">+</span></p>
+			<div id="PlayOnWait" style="display:none"></div>
+		</div>
+	</div>
+	
+	<script src="JS/jquery-1.10.2.js"></script>
+	<script src="JS/main.js"></script>
+	<script src="JS/partie.js"></script>
+	<script src="JS/joueur.js"></script>
+</body>
+</html>

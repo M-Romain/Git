@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jeu du président</title>
+<link rel="stylesheet" media="screen" type="text/css" title="Exemple" href="./Globaldesign.css" />
+</head>
+<body onload='javascipt:afficher_deconnexion(); afficher_noms(); demarrer_partie();'>
+	<div id="deconnexion" style="display:none">
+		Bienvenue <span id="nom"></span> <span id="nom_joueur_2"></span>
+		<button id="deco">Déconnexion</button>
+		<button id="retour" onClick = "javascript:self.location.href = './ConnexionLocale.html';">Retour</button>
+	</div>
+	<div>
+		<center><h3>Jeu du président</h3></center>
+	</div>
+
+	<div class="partieLocale">
+		<div id="joueur2">
+			<div class="cartesHori">
+				<div id="cartesHoriJ2"></div>
+			</div>
+			<center><div class="nomJoueurs" id="nomJoueur2"></div><button id="pass_2" onClick="javascript:passer('J2');">Passer</button><span id="nb_J2"></span></center>
+		</div>
+		<div id="plateau2">
+		</div>
+		<div id="joueur1">
+			<div class="cartesHori">
+				<div class="cartesHori" id="cartesHoriJ1"></div>
+			</div>
+			<center><div class="nomJoueurs" id="nomJoueur1"></div><button id="pass_1" onClick="javascript:passer('J1');">Passer</button><span id="nb_J1"></span></center>
+		</div>
+	</div>
+	
+	<script src="./JS/jquery-1.10.2.js"></script>
+	<script src="./JS/main.js"></script>
+	<script src="./JS/partie_locale.js"></script>
+	<script src="./JS/joueur.js"></script>
+</body>
+</html>
